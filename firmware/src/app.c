@@ -138,15 +138,13 @@ void APP_Tasks ( void )
         /* Application's initial state. */
         case APP_STATE_INIT:
         {
+            SYS_MESSAGE("APP_STATE_INIT\n\r");
             break;
         }
 
-        /* TODO: implement your application state machine.*/
-
-        /* The default state should never be executed. */
         default:
         {
-            /* TODO: Handle error in application's state machine. */
+            while(1);
             break;
         }
     }

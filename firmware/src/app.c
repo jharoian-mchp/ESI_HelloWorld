@@ -139,6 +139,19 @@ void APP_Tasks ( void )
         case APP_STATE_INIT:
         {
             SYS_MESSAGE("APP_STATE_INIT\n\r");
+            appData.state = APP_STATE_PRINT;
+            break;
+        }
+        
+        case APP_STATE_PRINT:
+        {
+            SYS_MESSAGE("APP_STATE_PRINT\n\r");
+            appData.state = APP_STATE_WAIT;
+            break;
+        }
+
+        case APP_STATE_WAIT:
+        {
             break;
         }
 

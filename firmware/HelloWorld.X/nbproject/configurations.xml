@@ -170,6 +170,7 @@
                    displayName="Important Files"
                    projectFiles="false">
       <itemPath>Makefile</itemPath>
+      <itemPath>../../.gitignore</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
